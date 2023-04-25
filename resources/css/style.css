@@ -1,0 +1,414 @@
+/* Default Theme
+---------------------
+    font : Gill Sans
+    color : 
+        Blue : #3473AF
+        Cyan : #0bdaff
+        Light Blue: #3175fd
+        White : #fff
+*/
+
+/* ------------ Basic Setup ------------ */
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+}
+
+*:focus {
+        outline: none;
+}
+
+html {
+        font-size: 16px;
+        color: #0063A0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #ffffff;
+        overflow-x: hidden;
+}
+
+body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+
+.row {
+        padding: 5% 0;
+        max-width: 1920px;
+}
+
+/* ------------ Reuseable Components ------------ */
+
+h1 {
+        font-size: 4em;
+        font-weight: 600;
+}
+
+hr {
+        border-top: 1px solid #e1e1e1;
+        margin: 0 5%;
+}
+
+.smallDivider {
+        margin: 0 10%;
+}
+
+.btn {
+        font-weight: 200;
+        padding: 20px 30px;
+        border: none;
+        background:  #0063A0;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        transition: 0.25s ease-in-out;
+        cursor: pointer;
+}
+
+.btn:hover {
+        background: #3175fd;
+}
+
+h2 {
+        text-align: center;
+        color: #3473AF;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+}
+
+h3 {
+        font-size: 30px;
+        font-weight: 600;
+}
+
+span {
+        font-weight: 300;
+        letter-spacing: 1px;
+
+}
+
+.description {
+        display: flex;
+        text-align: center;
+        margin-top: 3%;
+        justify-content: center;
+}
+
+/* ------------ Header ------------ */
+
+.banner {
+        box-shadow: rgba(0, 0, 0, 0.064) 0 5px 10px;
+        padding: 0.5% 2%;
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 10px;
+}
+
+.banner ul {
+        list-style: none;
+        display: flex;
+        column-gap: 40px;
+}
+
+.banner a {
+        text-decoration: none;
+        color: #3473AF;
+        font-size: 90%;
+}
+
+.banner i {
+        margin-right: 10px;
+}
+
+.banner a:hover {
+        text-decoration: underline;
+}
+
+.headerContainer {
+        display: flex;
+        align-items: center;
+        padding: 1% 5%;
+}
+
+.logoContainer {
+        margin: 0;
+}
+
+.logo {
+        width: 35%;
+        max-width: 35%;
+}
+
+.navTabsContainer {
+        height: 100%;
+}
+
+.navTabsContainer ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 30px;
+}
+
+
+.navTabsContainer ul li a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        transition: 0.3s;
+        padding: 10px 15px;
+}
+
+.navTabsContainer ul li a:hover {
+        background-color: #3473AF;
+        color: white;
+}
+
+/* ------------ Hero Header ------------ */
+
+.heroTextContainer {
+        background: linear-gradient(to top, #0055ff2f, #0055ff2f), url("/resources/img/hero\ photo.png") no-repeat fixed;
+        background-attachment: fixed;
+        background-size: cover;
+        overflow: hidden;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        padding: 3% 10%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.heroText {
+        color: white;
+        text-align: center;
+        margin-bottom: 100px;
+}
+
+/* ------------ Info Sharing ------------ */
+
+.infoSharingContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 5% 13%;
+        row-gap: 80px;
+}
+
+.infoSharingContainer h2 {
+        margin-bottom: 3%;
+}
+
+.infoSharingContainer span {
+        color: #3473AF;
+        text-align: justify;
+}
+
+/* ------------ Why SnapClient ------------ */
+
+.whySnapClient {
+        /* background: linear-gradient(40deg, #00000094, #00000094), url("/resources/img/handshake.jpeg") fixed;
+        background-size: cover; */
+        /* background-color: #fafafa; */
+
+}
+
+.trackRecordIcon {
+        /* background: linear-gradient(40deg, #3175fd, #0bdaff); */
+        width: 90px;
+        height: 90px;
+        padding: 15px;
+        border-radius: 14px;
+        margin-bottom: -20px;
+}
+
+.cardMotherContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 2% 8% 1% 8%;
+        text-align: justify
+}
+
+.cardContainer {
+        padding: 2% 2%;
+        width: 30%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        row-gap: 40px;
+        line-height: 35px;
+        box-shadow: rgba(0, 0, 0, 0.111) 0 10px 25px;
+}
+
+.cardContainer a {
+        padding: 2% 5%;
+        text-decoration: none;
+        color: #0063A0;
+        border: #0063A0 1px solid;
+        transition: 0.25s ease-out;
+}
+
+.cardContainer a:hover {
+        background-color: #0063A0;
+        color: white;
+}
+
+/* ------------ Softwares ------------ */
+
+.softwareLogosContainer {
+        margin-top: 5%;
+        padding: 0 3%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+}
+
+.hardwareLabel {
+        margin: 1.5% 10%;
+        position: absolute;
+}
+
+/* ------------ Contact Us ------------ */
+
+.contactUsContainer {
+        background: linear-gradient(40deg, #ffffffa5, #00000000), url("../img/ContactUsBG.jpeg");
+        background-image: cover;
+        background-attachment: fixed;
+        color: 3473AF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding: 5%;
+}
+
+.contactUsContainer h2 {
+        color: 3473AF;
+}
+
+.formContainer {
+        width: 45%;
+        margin-top: 5%;
+}
+
+.formContainer form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+}
+
+.formContainer form input,
+.formContainer form select,
+.formContainer form textarea {
+        padding: 2% 3%;
+        border: none;
+        color: rgb(39, 39, 39);
+        font-weight: 300;
+        letter-spacing: 1px;
+        box-shadow: rgba(0, 0, 0, 0.107) 0 10px 10px;
+        resize: vertical;
+}
+
+.formContainer form select {
+        width: 30%;
+}
+
+.formContainer form div {
+        display: flex;
+        justify-content: center;
+}
+
+.formContainer form button {
+        box-shadow: rgba(0, 0, 0, 0.107) 0 10px 10px;
+}
+
+/* ------------ Footer ------------ */
+
+.footerContainer {
+        background-color: #3473AF;
+        padding: 2% 5%;
+        padding-bottom: 1%;
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.contactCol {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+}
+
+.contactCol img {
+        width: 80%;
+}
+
+.contactCol ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+}
+
+.contactCol ul li {
+        margin-top: 10px;
+}
+
+.contactCol ul li a{
+        color: white;
+        text-decoration: none;
+}
+
+.contactCol ul li a:hover {
+        color: #b1d8ff;
+}
+
+/* Navigation Links */
+.navLinks {
+        width: 65%;
+}
+
+.navCol {
+        display: flex;
+        justify-content: space-around;
+}
+
+.navCol h4 {
+        color: white;
+        font-size: 150%;
+        font-weight: 600;
+        margin-bottom: 30px;
+}
+
+.navCol li {
+        list-style: none;
+        margin: 20px 0;
+}
+
+.navCol li a {
+        color: white;
+        text-decoration: none;
+}
+
+.navCol li a:hover {
+        color: #b1d8ff;
+}
+
+#copyRight {
+        color: white;
+        font-size: 90%;
+}
